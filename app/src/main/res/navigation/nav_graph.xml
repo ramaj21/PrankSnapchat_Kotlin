@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.rama.honorsmobileapps.pranksnapchat_kotlin.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_prankSnapFragment"
+            app:destination="@id/prankSnapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prankSnapFragment"
+        android:name="com.rama.honorsmobileapps.pranksnapchat_kotlin.PrankSnapFragment"
+        android:label="fragment_prank_snap"
+        tools:layout="@layout/fragment_prank_snap" />
+</navigation>
